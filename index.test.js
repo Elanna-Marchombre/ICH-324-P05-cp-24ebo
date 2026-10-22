@@ -1,7 +1,25 @@
 const { hello, shout } = require('./index');
-test('hello returns a personalized greeting', () => {
-expect(hello('Alice')).toBe('Hello, Alice!');
+
+describe('hello()', () => {
+    it('should returns a personalized greeting', () => {
+        expect(hello('Alice')).toBe('Hello, Alice!');
+    });
+
+    it('should does not return a greet for the wrong name', () => {
+        expect(hello('Alice')).not.toBe('Hello, Bob!');
+    });
+
+    it('should does not return a falsy value when provided a name', () => {
+        expect(hello('Alice')).not.toBeFalsy();
+    });
 });
-test('shout converts a word to uppercase and adds exclamation marks', () => {
-expect(shout('success')).toBe('SUCCESS!!!');
+
+describe('shout()', () => {
+    it('should converts a word to uppercase and adds exclamation marks', () => {
+        expect(shout('success')).toBe('SUCCESS!!!');
+    });
+
+    it('should does not leave a word in lowercase', () => {
+        expect(shout('success')).not.toBe('success!!!');
+    });
 });
