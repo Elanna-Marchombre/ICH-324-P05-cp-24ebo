@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="5" failures="0" errors="0" time="1.095">
+  <testsuite name="hello()" errors="0" failures="0" skipped="0" timestamp="2026-10-22T08:28:14" time="0.686" tests="5">
+    <testcase classname="hello() should returns a personalized greeting" name="hello() should returns a personalized greeting" time="0.003">
+    </testcase>
+    <testcase classname="hello() should does not return a greet for the wrong name" name="hello() should does not return a greet for the wrong name" time="0.001">
+    </testcase>
+    <testcase classname="hello() should does not return a falsy value when provided a name" name="hello() should does not return a falsy value when provided a name" time="0">
+    </testcase>
+    <testcase classname="shout() should converts a word to uppercase and adds exclamation marks" name="shout() should converts a word to uppercase and adds exclamation marks" time="0.043">
+    </testcase>
+    <testcase classname="shout() should does not leave a word in lowercase" name="shout() should does not leave a word in lowercase" time="0.001">
+    </testcase>
+  </testsuite>
+</testsuites>
